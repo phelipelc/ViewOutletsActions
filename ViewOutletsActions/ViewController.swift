@@ -10,9 +10,17 @@ import UIKit
 
 class ViewController: UIViewController {
 
+    @IBOutlet weak var label: UILabel!
+    @IBOutlet weak var myButton: UIButton!
+    @IBOutlet weak var myView: UIView!
+    @IBOutlet var buttons: [UIButton]!
+    var name: String = ""
+   
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+        
     }
 
     override func didReceiveMemoryWarning() {
@@ -20,6 +28,17 @@ class ViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
 
-
+    @IBAction func runSomething(_ sender: UIButton) {
+        print("runSomething")
+    
+    }
+    
+    @IBAction func doSomething(_ sender: Any, forEvent event: UIEvent) {
+        print("doSomething")
+    
+    }
+    @IBAction func change(_ sender: Any) {
+        print("change")
+    }
 }
 
